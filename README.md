@@ -282,5 +282,5 @@ Contributions are welcome! Please open issues or submit pull requests for:
 
 ## Contact
 
-Created and maintained by [Junaid433](https://github.com/Junaid433).
-Feel free to reach out for questions or collaboration.
+Github: [Junaid433](https://github.com/Junaid433)
+Telegram: [fakehecker](https://t.me/fakehecker)
