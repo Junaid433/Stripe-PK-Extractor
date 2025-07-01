@@ -1,4 +1,4 @@
-````markdown
+
 # Stripe-PK-Extractor - Stripe Secret Key to Publishable Key Extractor & Validator
 
 Stripe-PK-Extractor is a C++ tool designed to generate Stripe checkout sessions from secret keys, extract the associated publishable key, and optionally validate the publishable key by creating a test payment method. It supports both command-line usage and an HTTP server mode with JSON API responses.
@@ -268,6 +268,3 @@ Before contributing, please ensure:
 
 Created and maintained by [Junaid433](https://github.com/Junaid433).
 Feel free to reach out for questions or collaboration.
-
-```
-```
