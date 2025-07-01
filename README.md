@@ -207,8 +207,6 @@ Then POST JSON data to `http://localhost:8080/run`.
 
 ---
 
----
-
 ## Integration with Python
 
 You can call GetPK executable from Python using subprocess and parse JSON output:
