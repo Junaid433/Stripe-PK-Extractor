@@ -5,9 +5,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(SOURCES
-    main.cpp
-    Stripe.cpp
-    Algorithm.cpp
+    src/main.cpp
+    src/Stripe.cpp
+    src/Algorithm.cpp
 )
 
 include_directories(
