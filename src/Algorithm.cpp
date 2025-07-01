@@ -1,4 +1,4 @@
-#include "include/Algorithm.hpp"
+#include "../include/Algorithm.hpp"
 #include <stdexcept>
 #include <algorithm>
 #include <cstring>

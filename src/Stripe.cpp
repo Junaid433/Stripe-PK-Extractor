@@ -1,7 +1,7 @@
-#include "include/Stripe.hpp"
+#include "../include/Stripe.hpp"
 #include <curl/curl.h>
 #include <iostream>
-#include "include/nlohmann/json.hpp"
+#include "../include/nlohmann/json.hpp"
 
 using json = nlohmann::json;
 
