@@ -14,6 +14,8 @@
 #define BOLD "\033[1m"
 
 nlohmann::json process_sk(const std::string& secret_key, bool verify, bool json_output = true, bool no_output = true) {
+    (void)json_output;
+    (void)no_output;
     auto start = std::chrono::steady_clock::now();
     nlohmann::json output_json;
     output_json["input"]["secret_key"] = secret_key;
