@@ -283,4 +283,7 @@ Contributions are welcome! Please open issues or submit pull requests for:
 ## Contact
 
 Github: [Junaid433](https://github.com/Junaid433)
+
 Telegram: [fakehecker](https://t.me/fakehecker)
+
+Feel free to reach out in any case.
