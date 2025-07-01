@@ -15,12 +15,12 @@ Stripe-PK-Extractor is a C++ tool designed to generate Stripe checkout sessions 
   - [HTTP Server Mode](#http-server-mode)  
 - [Command-Line Arguments](#command-line-arguments)  
 - [Output Formats](#output-formats)  
-- [Examples](#examples)  
+- [Examples](#examples)
+- [Python Integration](#integration-with-python)
 - [Development & Build](#development--build)  
 - [Dependencies](#dependencies)  
 - [Project Structure](#project-structure)  
 - [Contributing](#contributing)  
-- [License](#license)  
 - [Contact](#contact)
 
 ---
@@ -207,6 +207,30 @@ Then POST JSON data to `http://localhost:8080/run`.
 
 ---
 
+---
+
+## Integration with Python
+
+You can call GetPK executable from Python using subprocess and parse JSON output:
+
+```python
+import subprocess
+import json
+
+def get_publishable_key(secret_key, verify=True):
+    cmd = ['./GetPK', f'--sk={secret_key}', f'--verify={"true" if verify else "false"}', '--json-output']
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        raise RuntimeError(f"Error: {result.stderr}")
+    data = json.loads(result.stdout)
+    return data
+
+data = get_publishable_key("sk_test_abc123")
+print(data.get("publishable_key"))
+```
+
+---
+
 ## Development & Build
 
 ### Dependencies
@@ -255,12 +279,6 @@ Contributions are welcome! Please open issues or submit pull requests for:
 * Bug fixes
 * Feature requests
 * Documentation improvements
-
-Before contributing, please ensure:
-
-* Code compiles without warnings
-* Follow existing coding style
-* Include relevant tests if applicable
 
 ---
 
